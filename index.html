@@ -67,7 +67,7 @@
 
         var resultado = (nota1 + nota2) / 2;
         console.log("O resultado da soma é: "+resultado);25
-        */
+        
 
         var palavra = "javaScript";
 
@@ -85,6 +85,61 @@
         console.log(exemplo1);
         console.log(exemplo2);
         console.log(exemplo3);
+        
+
+        var javascript = "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxzzzzzzzzzzzzzz."
+
+        var busca = javascript.search("x")
+        console.log(busca);
+
+        var busca1 = javascript.indexOf("x")
+        console.log(busca1);
+
+        var busca2 = javascript.indexOf("x", 122)
+        console.log(busca2);
+
+        var inicio = javascript.startsWith("z")
+        console.log(inicio);
+
+        var final = javascript.endsWith("z.")
+        console.log(final);
+
+        var trecho = javascript.substring(0, 30)
+        console.log(trecho);
+
+        var trecho2 = javascript.substr(7, 35)
+        console.log(trecho2);
+
+        var produtos = "Notebook, Smartphone, Tablet, Fone de Ouvido, Smartwatch";
+        var listaprodutos = produtos.split(", ")
+        console.log(listaprodutos);
+
+        console.log(listaprodutos[2]);
+        
+
+        var declaracao = "o aluno, portador do RG NumRG, CPF NumCPF, estuda na FIAP"
+
+        var nome = prompt("Digite o nome do aluno:");
+        var rg = prompt("Digite o número do RG:");
+        var cpf = prompt("Digite o número do CPF:");
+
+        var declaracaoPronta = declaracao.replace("aluno",nome).replace("NumRG",rg).replace("NumCPF",cpf);
+
+        console.log(declaracaoPronta);
+
+        var novaDeclaracao = `O ${nome}, portador do RG ${rg}, CPF ${cpf}, estuda na FIAP.`
+        console.log(novaDeclaracao);
+        */
+
+        var cliente = prompt("Digite o nome completo:");
+
+        var posicao = cliente.indexOf(" ");
+
+        var primeiroNome = cliente.substring(0, posicao);
+
+        alert("Obrigado "+primeiroNome+", por se cadastrar em nosso site!");
+
+
     </script>
 
 </body>
